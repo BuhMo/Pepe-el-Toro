@@ -3,7 +3,8 @@ package thegame;
 public class TheGame {
 
     public static void intro() {
-        System.out.println("¿Donde estoy?..."
+        System.out.print("¿Donde estoy?..."
                 + "¿qué ago aquí?...");
+        System.out.print("¿Que es este lugar?...");
     }
 }
