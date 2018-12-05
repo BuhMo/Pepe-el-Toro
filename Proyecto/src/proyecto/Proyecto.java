@@ -5,6 +5,7 @@
  */
 package proyecto;
 
+import java.util.InputMismatchException;
 import java.util.Random;
 
 import java.util.Scanner;
@@ -16,6 +17,7 @@ public class Proyecto {
     static int dinero = 0;
 
     public static void bossfinal() throws InterruptedException {
+        try{
         Random rand = new Random();
         System.out.println("*Entras*");
         Thread.sleep(1500);
@@ -108,6 +110,10 @@ public class Proyecto {
         System.out.println("*Despiertas en un hospital sin piernas...*");
         Thread.sleep(3000);
         System.exit(0);
+        }catch(InputMismatchException e){
+            System.out.println("Algo paso...");
+            
+        }
     }
 
     public static void peleasrandomfasefinal() throws InterruptedException {
@@ -360,6 +366,7 @@ public class Proyecto {
     }
 
     public static void main(String[] args) throws InterruptedException {
+        try{
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
         int sangre = 0;
@@ -767,7 +774,9 @@ public class Proyecto {
         tienda();
 
         fasefinal();
-
+        }catch(InputMismatchException e){
+            System.out.println("Solo pon numeros...");
+        }
     }
 
 }
